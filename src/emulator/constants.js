@@ -52,6 +52,8 @@ const _commands = {
       _emulators.firestore.localPath,
       "--port",
       _emulators.firestore.port,
+      "--host",
+      process.env.FIRESTORE_EMULATOR_HOST || "localhost",
     ],
   },
 };
